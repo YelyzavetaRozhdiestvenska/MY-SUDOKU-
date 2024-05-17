@@ -1,0 +1,14 @@
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56;
+  margin: 30vh auto auto auto;
+  color: saddlebrown;
+}

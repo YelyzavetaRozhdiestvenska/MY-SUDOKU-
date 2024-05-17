@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Table from '../components/sudokuField/Table.jsx';
-import NewGameBtn from '../components/newGame/NewGame.jsx';
-import Timer from '../components/timer/Timer';
-import BtnCont from '../components/levelFilter/LevelGameBtn.jsx';
-import ControlBtnCont from '../components/button/ControlBtn.jsx';
+import Table from '../../components/sudokuField/Table.jsx';
+import NewGameBtn from '../../components/newGame/NewGame.jsx';
+import Timer from '../../components/timer/Timer';
+import BtnCont from '../../components/levelFilter/LevelGameBtn.jsx';
+import ControlBtnCont from '../../components/button/ControlBtn.jsx';
 import {
   generateSudoku,
   getDeepCopy,
@@ -16,7 +16,7 @@ import {
   checkValid,
   solver,
   compareSudokus,
-} from '../components/functionsSudoku.js';
+} from '../../components/functionsSudoku.js';
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // const initial = generateSudoku();
@@ -52,7 +52,7 @@ import {
 // }
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-export const Game = () => {
+const Game = () => {
   const [difficulty, setDifficulty] = useState(81);
   const [sudokuArr, setSudokuArr] = useState(createEmptyGrid());
   const [time, setTime] = useState(0);
@@ -142,3 +142,5 @@ export const Game = () => {
     </div>
   );
 };
+
+export default Game;

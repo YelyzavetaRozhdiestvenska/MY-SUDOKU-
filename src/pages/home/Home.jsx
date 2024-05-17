@@ -16,7 +16,7 @@ const styles = {
   },
 };
 
-export function Home() {
+export default function Home() {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>SUDOKU </h1>

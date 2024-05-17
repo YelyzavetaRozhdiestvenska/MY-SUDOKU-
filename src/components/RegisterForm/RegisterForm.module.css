@@ -1,0 +1,42 @@
+form {
+  width: 50vh;
+  height: max-content;
+  margin: 10vh auto 0 auto;
+  background-color: saddlebrown;
+  border: 2px solid #f29f05;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: bisque;
+  margin: 24px 10px 24px 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: bisque;
+  background: #f29f05;
+  box-shadow: 0 5px 0 #d97d00;
+  margin: 24px 10px 24px 10px;
+
+  &:hover {
+    background: #d97d00;
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+  }
+
+  &:active {
+    background: #d97d00;
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+    scale: 0.9;
+  }
+}

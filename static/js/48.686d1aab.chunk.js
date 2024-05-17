@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[48],{48:(e,t,n)=>{n.r(t),n.d(t,{default:()=>o});var r=n(579);const a={container:{backgroundSize:"cover",backgroundRepeat:"no-repeat",minHeight:"100vh",display:"flex",justifyContent:"center"},title:{fontWeight:700,fontSize:56,marginRight:"auto",marginLeft:"auto",marginTop:"30vh",color:"saddlebrown"}};function o(){return(0,r.jsx)("div",{style:a.container,children:(0,r.jsx)("h1",{style:a.title,children:"SUDOKU "})})}}}]);
+//# sourceMappingURL=48.686d1aab.chunk.js.map

@@ -114,10 +114,8 @@ const Game = () => {
     if (compare.isComplete) {
       toast.success('Congratulations! You have solved Sudoku!');
       setGameStarted(false);
-    } else if (compare.isSolvable) {
-      toast.info('Keep going!');
     } else {
-      toast.error('Sudoku cannot be solved. Try again!');
+      toast.info('Keep going!');
     }
   }
 

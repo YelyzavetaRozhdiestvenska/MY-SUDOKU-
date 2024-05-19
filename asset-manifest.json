@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/MY-SUDOKU-/static/css/main.87d553e7.css",
-    "main.js": "/MY-SUDOKU-/static/js/main.389879d0.js",
+    "main.js": "/MY-SUDOKU-/static/js/main.99cdba7d.js",
     "static/js/48.686d1aab.chunk.js": "/MY-SUDOKU-/static/js/48.686d1aab.chunk.js",
-    "static/css/690.d40d3c42.chunk.css": "/MY-SUDOKU-/static/css/690.d40d3c42.chunk.css",
-    "static/js/690.7e3bf187.chunk.js": "/MY-SUDOKU-/static/js/690.7e3bf187.chunk.js",
-    "static/css/779.682f6319.chunk.css": "/MY-SUDOKU-/static/css/779.682f6319.chunk.css",
-    "static/js/779.eaf1b9af.chunk.js": "/MY-SUDOKU-/static/js/779.eaf1b9af.chunk.js",
+    "static/css/541.0d9717e4.chunk.css": "/MY-SUDOKU-/static/css/541.0d9717e4.chunk.css",
+    "static/js/541.da54c916.chunk.js": "/MY-SUDOKU-/static/js/541.da54c916.chunk.js",
+    "static/css/338.7c34947f.chunk.css": "/MY-SUDOKU-/static/css/338.7c34947f.chunk.css",
+    "static/js/338.2b7633ef.chunk.js": "/MY-SUDOKU-/static/js/338.2b7633ef.chunk.js",
     "static/css/893.d185fe0a.chunk.css": "/MY-SUDOKU-/static/css/893.d185fe0a.chunk.css",
-    "static/js/893.7eae8378.chunk.js": "/MY-SUDOKU-/static/js/893.7eae8378.chunk.js",
+    "static/js/893.8d4c38a4.chunk.js": "/MY-SUDOKU-/static/js/893.8d4c38a4.chunk.js",
     "static/media/bg-welcome.jpg": "/MY-SUDOKU-/static/media/bg-welcome.e52539bab2075f344580.jpg",
     "index.html": "/MY-SUDOKU-/index.html",
     "main.87d553e7.css.map": "/MY-SUDOKU-/static/css/main.87d553e7.css.map",
-    "main.389879d0.js.map": "/MY-SUDOKU-/static/js/main.389879d0.js.map",
+    "main.99cdba7d.js.map": "/MY-SUDOKU-/static/js/main.99cdba7d.js.map",
     "48.686d1aab.chunk.js.map": "/MY-SUDOKU-/static/js/48.686d1aab.chunk.js.map",
-    "690.d40d3c42.chunk.css.map": "/MY-SUDOKU-/static/css/690.d40d3c42.chunk.css.map",
-    "690.7e3bf187.chunk.js.map": "/MY-SUDOKU-/static/js/690.7e3bf187.chunk.js.map",
-    "779.682f6319.chunk.css.map": "/MY-SUDOKU-/static/css/779.682f6319.chunk.css.map",
-    "779.eaf1b9af.chunk.js.map": "/MY-SUDOKU-/static/js/779.eaf1b9af.chunk.js.map",
+    "541.0d9717e4.chunk.css.map": "/MY-SUDOKU-/static/css/541.0d9717e4.chunk.css.map",
+    "541.da54c916.chunk.js.map": "/MY-SUDOKU-/static/js/541.da54c916.chunk.js.map",
+    "338.7c34947f.chunk.css.map": "/MY-SUDOKU-/static/css/338.7c34947f.chunk.css.map",
+    "338.2b7633ef.chunk.js.map": "/MY-SUDOKU-/static/js/338.2b7633ef.chunk.js.map",
     "893.d185fe0a.chunk.css.map": "/MY-SUDOKU-/static/css/893.d185fe0a.chunk.css.map",
-    "893.7eae8378.chunk.js.map": "/MY-SUDOKU-/static/js/893.7eae8378.chunk.js.map"
+    "893.8d4c38a4.chunk.js.map": "/MY-SUDOKU-/static/js/893.8d4c38a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87d553e7.css",
-    "static/js/main.389879d0.js"
+    "static/js/main.99cdba7d.js"
   ]
 }

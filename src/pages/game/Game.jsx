@@ -57,11 +57,13 @@ const Game = () => {
   const [sudokuArr, setSudokuArr] = useState(createEmptyGrid());
   const [time, setTime] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
+  const [initialSudokuArr, setInitialSudokuArr] = useState(createEmptyGrid());
 
   useEffect(() => {
     const initialSudoku = generateSudoku();
     const sudokuWithRemovedCells = removeCells(initialSudoku, difficulty);
     setSudokuArr(sudokuWithRemovedCells);
+    setInitialSudokuArr(sudokuWithRemovedCells);
 
     let timer;
     if (gameStarted) {
@@ -78,6 +80,7 @@ const Game = () => {
     const newSudoku = generateSudoku();
     const sudokuWithRemovedCells = removeCells(newSudoku, difficulty);
     setSudokuArr(sudokuWithRemovedCells);
+    setInitialSudokuArr(sudokuWithRemovedCells);
     setGameStarted(true);
     setTime(0);
   }
@@ -105,7 +108,7 @@ const Game = () => {
   }
 
   function checkSudoku() {
-    let solvedSudoku = getDeepCopy(sudokuArr);
+    let solvedSudoku = getDeepCopy(initialSudokuArr);
     solver(solvedSudoku);
     let compare = compareSudokus(sudokuArr, solvedSudoku);
     if (compare.isComplete) {
@@ -119,7 +122,7 @@ const Game = () => {
   }
 
   function resetSudoku() {
-    setSudokuArr(getDeepCopy(sudokuArr));
+    setSudokuArr(getDeepCopy(initialSudokuArr));
   }
 
   return (

@@ -1,28 +1,13 @@
-import { Outlet, NavLink } from 'react-router-dom';
-// import { Toaster } from 'react-hot-toast';
+import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
-import css from './SharedLayout.module.css';
 
-export const SharedLayout = () => {
+import { AppBar } from '../AppBar/AppBar.js';
+
+export const Layout = () => {
   return (
-    <div>
-      <header className={css.header}>
-        <nav>
-          <NavLink className={css.navLink} to="/" end>
-            Home
-          </NavLink>
-          <NavLink className={css.navLink} to="/register">
-            Register
-          </NavLink>
-          <NavLink className={css.navLink} to="/login">
-            Login
-          </NavLink>
-          <NavLink className={css.navLink} to="/game">
-            Game
-          </NavLink>
-        </nav>
-      </header>
-      <Suspense fallback={<div>Loading....</div>}>
+    <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 16px' }}>
+      <AppBar />
+      <Suspense fallback={null}>
         <Outlet />
       </Suspense>
     </div>

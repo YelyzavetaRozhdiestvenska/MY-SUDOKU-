@@ -1,0 +1,8 @@
+.header {
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh 0;
+  background: orange;
+}

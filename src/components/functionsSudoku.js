@@ -124,23 +124,14 @@ export function removeCells(grid, difficulty) {
 // >>>>>>>>>>Решение игры>>>>>>>>>>>>>>>>>>>>>>>>
 
 export function compareSudokus(currentSudoku, solvedSudoku) {
-  let res = {
-    isComplete: true,
-    isSolvable: true,
-  };
-  for (var i = 0; i < 9; i++) {
-    for (var j = 0; j < 9; j++) {
-      console.log(`${currentSudoku[i][j]}-${solvedSudoku[i][j]}`);
-
+  for (let i = 0; i < 9; i++) {
+    for (let j = 0; j < 9; j++) {
       if (currentSudoku[i][j] !== solvedSudoku[i][j]) {
-        if (currentSudoku[i][j] !== -1) {
-          res.isSolvable = false;
-        }
-        res.isComplete = false;
+        return false;
       }
     }
   }
-  return res;
+  return true;
 }
 
 export function checkRow(grid, row, num) {

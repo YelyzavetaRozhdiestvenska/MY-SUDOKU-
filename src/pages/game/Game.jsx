@@ -24,12 +24,16 @@ const Game = () => {
   const [time, setTime] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
   const [initialSudokuArr, setInitialSudokuArr] = useState(createEmptyGrid());
+  const [initialRemovedCellsArr, setInitialRemovedCellsArr] = useState(
+    createEmptyGrid()
+  );
 
   useEffect(() => {
     const initialSudoku = generateSudoku();
     const sudokuWithRemovedCells = removeCells(initialSudoku, difficulty);
     setSudokuArr(sudokuWithRemovedCells);
     setInitialSudokuArr(initialSudoku);
+    setInitialRemovedCellsArr(sudokuWithRemovedCells);
 
     let timer;
     if (gameStarted) {
@@ -46,7 +50,8 @@ const Game = () => {
     const newSudoku = generateSudoku();
     const sudokuWithRemovedCells = removeCells(newSudoku, difficulty);
     setSudokuArr(sudokuWithRemovedCells);
-    setInitialSudokuArr(sudokuWithRemovedCells);
+    setInitialSudokuArr(newSudoku);
+    setInitialRemovedCellsArr(sudokuWithRemovedCells);
     setGameStarted(true);
     setTime(0);
   }
@@ -73,18 +78,19 @@ const Game = () => {
     setSudokuArr(sudoku);
   }
 
-  function checkSudoku(grid) {
-    let compare = compareSudokus(setSudokuArr(grid), initialSudokuArr);
-    if (compare.isComplete) {
+  function checkSudoku() {
+    if (compareSudokus(sudokuArr, initialSudokuArr)) {
       toast.success('Congratulations! You have solved Sudoku!');
-      setGameStarted(false);
-      setTime(0);
     } else {
       toast.info('Keep going!');
     }
   }
 
-  function resetSudoku() {}
+  function resetSudoku() {
+    setSudokuArr(getDeepCopy(initialRemovedCellsArr));
+    setTime(0);
+    setGameStarted(false);
+  }
 
   return (
     <div className={css.game}>

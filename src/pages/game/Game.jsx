@@ -29,7 +29,7 @@ const Game = () => {
     const initialSudoku = generateSudoku();
     const sudokuWithRemovedCells = removeCells(initialSudoku, difficulty);
     setSudokuArr(sudokuWithRemovedCells);
-    setInitialSudokuArr(sudokuWithRemovedCells);
+    setInitialSudokuArr(initialSudoku);
 
     let timer;
     if (gameStarted) {
@@ -73,21 +73,18 @@ const Game = () => {
     setSudokuArr(sudoku);
   }
 
-  function checkSudoku() {
-    let solvedSudoku = getDeepCopy(initialSudokuArr);
-    solver(solvedSudoku);
-    let compare = compareSudokus(sudokuArr, solvedSudoku);
+  function checkSudoku(grid) {
+    let compare = compareSudokus(setSudokuArr(grid), initialSudokuArr);
     if (compare.isComplete) {
       toast.success('Congratulations! You have solved Sudoku!');
       setGameStarted(false);
+      setTime(0);
     } else {
       toast.info('Keep going!');
     }
   }
 
-  function resetSudoku() {
-    setSudokuArr(getDeepCopy(initialSudokuArr));
-  }
+  function resetSudoku() {}
 
   return (
     <div className={css.game}>

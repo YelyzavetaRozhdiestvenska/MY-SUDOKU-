@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import { LoginForm } from 'components/LoginForm/LoginForm';
+import { LoginForm } from 'components/loginForm/LoginForm';
 import css from './Login.module.css';
 
 export default function Login() {

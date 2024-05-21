@@ -13,7 +13,6 @@ import storage from 'redux-persist/lib/storage';
 
 import { authReducer } from './slice';
 
-// Persisting token field from auth slice to localstorage
 const authPersistConfig = {
   key: 'auth',
   storage,

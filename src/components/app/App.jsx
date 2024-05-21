@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from '../layout/SharedLayout';
-// import { PrivateRoute } from '../PrivateRoute';
+import { PrivateRoute } from '../PrivateRoute';
 import { RestrictedRoute } from '../RestrictedRoute';
 import { refreshUser } from '../../redux/auth/operations';
 import { useAuth } from '../../hooks/useAuth';
@@ -40,8 +40,7 @@ export const App = () => {
         />
         <Route
           path="/game"
-          // element={<PrivateRoute redirectTo="/login" component={<Game />} />}
-          element={<RestrictedRoute redirectTo="/game" component={<Game />} />}
+          element={<PrivateRoute redirectTo="/login" component={<Game />} />}
         />
       </Route>
       <Route path="*" element={<Home />} />

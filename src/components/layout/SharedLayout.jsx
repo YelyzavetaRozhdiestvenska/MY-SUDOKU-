@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 
-import { AppBar } from '../appBar_r/AppBar';
+import { AppBar } from '../appBar/AppBar';
 
 export const Layout = () => {
   return (

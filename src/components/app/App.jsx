@@ -10,7 +10,7 @@ import { useAuth } from '../../hooks/useAuth';
 const Home = lazy(() => import('../../pages/home/Home'));
 const Register = lazy(() => import('../../pages/register/Register'));
 const Login = lazy(() => import('../../pages/login/Login'));
-const Game = lazy(() => import('../../pages/game//Game'));
+const Game = lazy(() => import('../../pages/game/Game'));
 
 export const App = () => {
   const dispatch = useDispatch();
